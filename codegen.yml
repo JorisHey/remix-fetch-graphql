@@ -1,0 +1,9 @@
+overwrite: true
+schema: "http://countries.trevorblades.com/graphql"
+documents: "app/graphql/**/*.ts"
+generates:
+  app/generated/graphql.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-graphql-request"
